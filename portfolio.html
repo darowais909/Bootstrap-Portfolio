@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-14936128.jpg&fm=jpg">
+  </head>
+  <body>
+    <!--Nav Section-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 position-sticky top-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-0 ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#aboutme">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Hero Section-->
+    <section class="text-center bg-primary p-5 text-white">
+      <h1 class="display-3">Welcome To My Portfolio</h1>
+      <p class="fs-3">I showcase my projects and skills here.</p>
+    </section>
+    <!--About Me Section-->
+    <section class="mt-5 mb-5" id="aboutme">
+      <h1 class="text-center mb-3">About Me</h1>
+      <div class="row px-5 m-0">
+        <img class="col-12 col-md-6"
+          src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <p class="col-12 col-md-6 text-center text-md-start me-0">
+          I hold a degree in Computer Science and Engineering and am currently pursuing further knowledge in 
+software development. I am eager to secure a position in a dynamic and challenging work environment. I 
+am seeking an opportunity that not only fosters continuous improvement and the acquisition of new skills 
+but also motivates me to strive for excellence, contributing to the mutual success and growth of both myself 
+and the company.
+        </p>
+      </div>
+    </section>
+    <!--Project Section-->
+    <section class="row bg-light mx-auto">
+      <h1 class="text-center m-auto" id="project">Projects</h1>
+      <div class="col-8 card mt-3 mx-auto m-md-5 p-0 col-md-3">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <div class="card-body">
+          <h1 class="card-title">Project 1</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut.</p>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+      <div class="col-8 card mt-3 mx-auto p-0 m-md-5 col-md-3">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="height:250px;">
+        <div class="card-body">
+          <h1 class="card-title">Project 2</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut.</p>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+      <div class="col-8 card mt-3 mx-auto p-0 m-md-5 col-md-3">
+        <img class="card-img-top" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <div class="card-body">
+          <h1 class="card-title">Project 3</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut.</p>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+      </div>
+    </section>
+    <!--Contact Section-->
+    <section>
+      <div class="d-flex justify-content-center row mb-5">
+        <h1 class="m-auto text-center" id="contact">Contact</h1>
+        <form class="col-8 col-md-4">
+          <label for="name" class="form-label mt-4">Name</label>
+          <input type="text" id="name" required name="Name" class="form-control">
+          <label for="email" class="form-label mt-4">Email</label>
+          <input type="text" id="email" required name="Email" class="form-control">
+          <label for="floatingTextarea2" class="form-label mt-4">Message</label>
+          <textarea class="form-control" rows="4" id="floatingTextarea2"></textarea>
+          <button class="btn btn-primary mt-4 w-100">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!--Footer Section-->
+    <footer>
+      <p class="bg-dark text-white text-center pt-3 pb-4 mb-0">&copy; My Portfolio. All rights reserved.</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
